@@ -64,7 +64,7 @@ GOTO %1
     CALL conda env update -p %CONDA_DIR% -f environment.yml
 
     :: Install the local package in development (experimental) mode
-    CALL conda run -p %CONDA_DIR% python -m pip install -e .
+    @REM CALL conda run -p %CONDA_DIR% python -m pip install -e .
 
     :: Activate the environment
     GOTO activate_env
@@ -82,7 +82,7 @@ GOTO %1
 
 :: Start Jupyter Lab
 :jupyter
-    CALL conda run -p %CONDA_DIR% python -m jupyterlab --ip=0.0.0.0 --allow-root --NotebookApp.token=""
+    CALL conda run -p %CONDA_DIR% python -m jupyter lab --ip=0.0.0.0 --allow-root --NotebookApp.token=""
     GOTO end
 
 :: Make the package for uploading

@@ -2,10 +2,12 @@ name: arcgis_economic_distress_index
 
 channels:
   - esri
+  - scikit-learn
   - conda-forge
 
 dependencies:
   - arcgis
   - cenpy
   - python=3.9
- 
+  - scikit-learn
+  
