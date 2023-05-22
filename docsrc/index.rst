@@ -2,25 +2,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-arcgis-economic-distress-index Documentation
+ArcGIS-Economic-Distress-Index Documentation
 =============================================================================================================
 
-This documentation is generated from the template defined in ``./docsrc/source/index.rst``. This location and
-file is the place to start creating documentation for your project.
-
-reStructured Text
------------------
-
-Since not everybody knows the reStructured Text syntax cold, it does help to have a good reference or two.
-
-* `reStructured Text Cheat Sheet`_
-
-NBSphinx
---------
-
-Since frequently Jupyter Notebooks are valuable documentation in themselves, using `NBSphinx`_ you can include
-them directly in the documentation. Just ensure you start the notebook with a markdown cell using a level one
-header (``# Level One Title``).
+This documentation is rather simple, the notebook demonstrating how to download data add geometries, and
+share the results back to ArcGIS Online.
 
 Contents
 ========
@@ -28,24 +14,4 @@ Contents
 .. toctree::
     :maxdepth: 2
 
-    Notebook Template <notebooks/notebook-template>
-
-arcgis_economic_distress_index
-================================
-
-Example using the `Sphinx Autodoc`_ extension to document the automatically included support library for this
-project located in ``./src/arcgis_economic_distress_index``.
-
-.. automodule:: arcgis_economic_distress_index
-    :members:
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
-.. _reStructured Text Cheat Sheet: https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html
-.. _NBSphinx: https://nbsphinx.readthedocs.io/en/0.8.8/
-.. _Sphinx Autodoc: https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html
+    Create Economic Distress Index Layer Notebook<notebooks/create-economic-distress-index-layer>
