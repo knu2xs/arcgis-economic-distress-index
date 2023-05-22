@@ -7,5 +7,5 @@ channels:
 dependencies:
   - arcgis
   - cenpy
-  - python=3.9
+  - jupyterlab
  
