@@ -8,6 +8,7 @@ channels:
 dependencies:
   - arcgis
   - cenpy
+  - pandas
   - python=3.9
   - scikit-learn
   

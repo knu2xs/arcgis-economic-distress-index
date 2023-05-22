@@ -26,8 +26,8 @@ sys.path.insert(0, os.path.abspath('../../src'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'arcgis-economic-distress-index'
-copyright = '2022, Esri ArcGIS Business Analyst Development Team'
+project = 'ArcGIS-Economic-Distress-Index'
+copyright = '2023, Esri ArcGIS Business Analyst Development Team'
 author = 'Esri ArcGIS Business Analyst Development Team'
 
 # The full version, including alpha/beta/rc tags
@@ -237,7 +237,7 @@ nbsphinx_allow_errors = True
 autoclass_content = 'both'
 
 # enable building of docs on instances without needing to install dependencies
-autodoc_mock_imports = ["arcpy", "arcgis", "pandas"]
+autodoc_mock_imports = ["arcpy", "arcgis", "pandas", "ccenpy", "sklearn"]
 
 # prevent nbsphinx from trying to run unrun notebook cells
 nbsphinx_execute = 'never'
