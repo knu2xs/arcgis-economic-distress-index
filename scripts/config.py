@@ -103,6 +103,13 @@ percent_variable_lst = [
         'coefficient': 1.0
     },
     {
+        'name': 'pct_unemployment',
+        'alias': 'Unemployment',
+        'numerators': ['B23025_002E'],
+        'denominator': 'B23025_005E',
+        'coefficient': 1.0
+    },
+    {
         'name': 'pct_with_SNAP',
         'alias': 'Cash Public Assistance or Food Stamps/SNAP',
         'numerators': ['B19058_002E'],

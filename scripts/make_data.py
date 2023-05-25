@@ -25,6 +25,7 @@ from typing import List
 from arcgis.features import GeoAccessor
 from arcgis.gis import GIS
 import cenpy
+import numpy as np
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 
@@ -91,11 +92,15 @@ for col_nm, _, numerator_vars, denominator_vars, _ in config.percent_variable_ls
 df = df.drop(columns=req_vars)
 df['FIPS'] = df['state'] + df['county']
 
-# Use Min-Max Scaler to rescale the data
+# create a list of both quantitative and qualitative columns
 quant_cols = [c['name'] for c in config.percent_variable_lst]
 qual_cols = [c for c in df.columns if c not in quant_cols]
 
-# create an instance of the min-max scaler
+# if any of the denominators are zero, the resultant percentages are infinity, which is not correct, so replace
+for pct_col in quant_cols:
+    df.loc[np.isinf(df[pct_col]), pct_col] = None
+
+# Use Min-Max Scaler to rescale the data and start by creating an instance of the min-max scaler
 min_max_trs = MinMaxScaler(feature_range=(0, 1))
 
 # transform the data - since it returns a numpy array, convert back into data frame
