@@ -53,7 +53,7 @@ shutil.copytree(
 
 shutil.rmtree(os.path.join(prj_dir, "docsrc", "slides"), ignore_errors=True)
 shutil.copytree(
-    os.path.join(prj_dir, "slides"),
+    os.path.join(prj_dir, "reports", "slides"),
     os.path.join(prj_dir, "docsrc", "slides")
 )
 
