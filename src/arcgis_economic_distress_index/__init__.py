@@ -1,5 +1,5 @@
 __title__ = 'arcgis-economic-distress-index'
-__version__ = '0.0.0'
+__version__ = '0.1.0.dev0'
 __author__ = 'Esri ArcGIS Business Analyst Development Team'
 __license__ = 'Apache 2.0'
 __copyright__ = 'Copyright 2023 by Esri ArcGIS Business Analyst Development Team'
