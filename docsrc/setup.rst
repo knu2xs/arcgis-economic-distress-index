@@ -39,3 +39,7 @@ Finally, to get started, you can start up Jupyter Lab.
 Leave the command prompt window open after the browser window opens with Jupyter Lab. In Jupyter Lab
 open the `Create Economic Distress Index Layer Notebook`_ in the ``./notebooks`` directory to create 
 your own dataset using the steps in this Jupter Notebook.
+
+.. _this repository: https://github.com/knu2xs/arcgis-economic-distress-index
+.. _download the repository as a zip file: https://www.howtogeek.com/devops/how-to-clone-or-download-a-specific-branch-from-github/
+.. _Create Economic Distress Index Layer Notebook: notebooks/create-economic-distress-index-layer.htm
