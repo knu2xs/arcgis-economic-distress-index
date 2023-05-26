@@ -1,5 +1,5 @@
-Economic Distress Index Example Map
-===================================
+Economic Distress Index Example Mapping Application
+===================================================
 
 This is an example web mapping application built using the Feature Layer published from the example notebook included in this
 repository. I deliberately did not do much configuration, just let Smart Mapping select the ranges, took advantage of some of

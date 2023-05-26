@@ -1,10 +1,14 @@
 ArcGIS-Economic-Distress-Index Documentation
 =============================================================================================================
 
-This documentation is rather simple, the notebook demonstrating how to download data add geometries, and
-share the results back to ArcGIS Online. Since using a third party Python package, `CenPy`_, to get data from
-the US Census Bureau, even if already using Python  with ArcGIS Pro, we need a Python environment with this
-Python package installed.
+This documentation outlines the setup steps required to use this project on a machine with ArcGIS Pro, provides
+a Jupyter Notebook detailing the steps for creating an index layer, and also provides a script to streamline
+the process if this is desired.
+
+.. note:: 
+    Since using a third party Python package, `CenPy`_, to get data from
+    the US Census Bureau, even if already using Python  with ArcGIS Pro, we need a Python environment with this
+    Python package installed. Hence, if you want to use these resources, please follow the steps in the Setup, first.
 
 Contents
 ========
@@ -13,9 +17,9 @@ Contents
     :maxdepth: 2
 
     Setup<setup>
-    Create Economic Distress Index Layer Notebook<notebooks/create-economic-distress-index-layer>
-    Create Economic Distress Index Layer Script<economic-distress-index-script>
-    Example Economic Distress Index Mapping Application<economic-distress-index-example-map>
+    Jupyter Notebook<notebooks/create-economic-distress-index-layer>
+    Standalone Script<economic-distress-index-script>
+    Example Mapping Application<economic-distress-index-example-map>
 
 .. _CenPy: https://github.com/cenpy-devs/cenpy
 .. _this repository: https://github.com/knu2xs/arcgis-economic-distress-index
