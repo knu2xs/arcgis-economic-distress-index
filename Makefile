@@ -24,3 +24,7 @@ clean:
 env:
 	conda env create -p $(ENV_DIR) -f environment.yml
 	conda run -p $(ENV_NAME) pip install -e .
+
+## build the documentation
+docs:
+	conda run -p $(ENV_NAME) sphinx-build -a -b html docsrc docs
